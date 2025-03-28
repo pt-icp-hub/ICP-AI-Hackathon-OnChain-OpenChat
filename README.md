@@ -124,12 +124,6 @@ TODO
 
 ---
 
-## 🌐 Access Bot Description
-
-
-
----
-
 ## 🛠 Customize Your Bot
 
 The default bot is just an example. You can modify its behavior by editing `handler.ts` and linking it to your own AI backend or tools.
