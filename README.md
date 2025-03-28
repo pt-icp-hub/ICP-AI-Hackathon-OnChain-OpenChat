@@ -111,16 +111,16 @@ npm i
 npm run dev
 ```
 
-Your bot will now be running locally and registered to OpenChat. You can test it by messaging the bot directly from the OpenChat UI.
-
----
-
-## 🌐 Access Bot Description
-
 Once the bot is deployed, its description will be available at:
 ```bash
 http://<YOU_CANISTER_ID>.raw.localhost:3000
 ```
+
+---
+
+### 8. Register your bot on Openchat and start messaging it!
+
+TODO
 
 ---
 
