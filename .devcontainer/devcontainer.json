@@ -1,0 +1,17 @@
+{
+  "name": "ICP OpenChat Bot Dev",
+  "dockerFile": "Dockerfile",
+  "forwardPorts": [3000, 5001, 8080],
+  "postCreateCommand": "pnpm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "mounts": [
+    "source=${localWorkspaceFolder}/open-chat-bots,target=/workspace/open-chat-bots,type=bind,consistency=cached"
+  ]
+}
