@@ -1,17 +1,36 @@
 {
   "name": "ICP OpenChat Bot Dev",
-  "dockerFile": "Dockerfile",
-  "forwardPorts": [3000, 5001, 8080],
-  "postCreateCommand": "pnpm install",
+"dockerFile": "Dockerfile",
+"forwardPorts": [3000, 5001, 8080],
+  "portsAttributes": {
+    "4943": {
+      "label": "dfx",
+      "onAutoForward": "ignore"
+    },
+    "8080": {
+      "label": "dev server",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "onCreateCommand": "nohup bash -c 'scripts/setup.sh &'",
+  "postCreateCommand": "",
+  "postAttachCommand": "([ -f nohup.out ] && (cat nohup.out && rm nohup.out)) || exit 0",
   "customizations": {
     "vscode": {
       "extensions": [
         "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode"
-      ]
+        "esbenp.prettier-vscode",
+        "dfinity-foundation.vscode-motoko",
+        "ms-python.python",
+        "GitHub.copilot"          
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      }
     }
   },
   "mounts": [
-    "source=${localWorkspaceFolder}/open-chat-bots,target=/workspace/open-chat-bots,type=bind,consistency=cached"
+  "source=${localWorkspaceFolder}/open-chat-bots,target=/workspace/open-chat-bots,type=bind,consistency=cached"
   ]
 }
