@@ -111,7 +111,13 @@ npm i
 npm run dev
 ```
 
-Your bot will now be running locally and registered to OpenChat. You can test it by messaging the bot directly from the OpenChat UI.
+Your bot will now be running locally.
+
+---
+
+### 8. Register your bot on Openchat and start messaging it!
+
+TODO
 
 ---
 
