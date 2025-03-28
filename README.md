@@ -111,7 +111,10 @@ npm i
 npm run dev
 ```
 
-Your bot will now be running locally.
+Once the bot is deployed, its description will be available at:
+```bash
+http://<YOU_CANISTER_ID>.raw.localhost:3000
+```
 
 ---
 
@@ -123,10 +126,7 @@ TODO
 
 ## 🌐 Access Bot Description
 
-Once the bot is deployed, its description will be available at:
-```bash
-http://<YOU_CANISTER_ID>.raw.localhost:3000
-```
+
 
 ---
 
