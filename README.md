@@ -3,6 +3,9 @@
 Welcome to the **ICP AI Hackathon - OpenChat Integration Template**! This repository showcases how to build an **AI-powered bot** for [OpenChat](https://oc.app), a decentralized messaging dApp on the Internet Computer. This bot runs as a service that integrates with the OpenChat bot SDK and connects to your local OpenChat instance.
 
 This template is based on the official [open-chat-bots](https://github.com/open-chat-labs/open-chat-bots) repository developed by the OpenChat team.
+> ⚠️ **Note:** The OpenChat Bot SDK is currently under active development and subject to frequent changes.  
+> To ensure stability during the hackathon, we’ve pinned this template to a specific version to avoid breaking changes.  
+> If you'd like to explore the latest updates, features, or contribute directly, please refer to the official [open-chat-bots](https://github.com/open-chat-labs/open-chat-bots) repository.
 
 ---
 
