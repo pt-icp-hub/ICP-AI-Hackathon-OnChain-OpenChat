@@ -17,7 +17,7 @@ MODE=${1:-install} # MODE is either install, reinstall or upgrade
 if [[ $MODE = "install" ]] || [[ $MODE = "reinstall" ]]
 then
     # Extract the OpenChat public key from the user_index
-    OC_PUBLIC_KEY=$(./utils/get_oc_public_key.sh) || exit 1
+    OC_PUBLIC_KEY=$(curl -s http://localhost:5001/public-key) || exit 1
 
     # Build the reminder_bot install args
     ARGS="(variant { Init = record { oc_public_key = \"$OC_PUBLIC_KEY\" } })"

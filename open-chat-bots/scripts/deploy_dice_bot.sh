@@ -8,10 +8,10 @@ IDENTITY=${1:-dice_bot} # The identity to use for the bot. This must be differen
 PORT=${2:-3000} # The port the bot will listen on
 
 # The local IC URL
-IC_URL=http://127.0.0.1:8080
+IC_URL=http://127.0.0.1:4943
 
 # Query the OpenChat user_index canister for the OpenChat public key
-OC_PUBLIC_KEY=$(./utils/get_oc_public_key.sh) || exit 1
+OC_PUBLIC_KEY=$(curl -s http://localhost:5001/public-key) || exit 1
 
 # Get the principal for the bot identity creating it if it does not exist
 PRINCIPAL=$(./utils/get_bot_identity.sh $IDENTITY) || exit 1
