@@ -60,8 +60,6 @@ http://<YOU_CANISTER_ID>.raw.localhost:4943
 
 ### 4. Register your bot on Openchat and start messaging it!
 
-### 4. Register your bot on Openchat and start messaging it!
-
 Follow these steps to register and interact with your bot in your local OpenChat instance:
 
 1. **Register with Internet Identity**
