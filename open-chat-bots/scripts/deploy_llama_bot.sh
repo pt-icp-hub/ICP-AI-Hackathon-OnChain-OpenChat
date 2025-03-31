@@ -8,7 +8,7 @@ IDENTITY=${1:-llama_bot} # The identity to use for the bot. This must be differe
 PORT=${2:-4000} # The port the bot will listen on
 
 # The local IC URL
-IC_URL=http://127.0.0.1:8080
+IC_URL=http://127.0.0.1:4943
 
 # Query the OpenChat user_index canister for the OpenChat public key
 OC_PUBLIC_KEY=$(curl -s http://localhost:5001/public-key) || exit 1
