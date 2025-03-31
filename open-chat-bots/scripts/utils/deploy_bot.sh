@@ -29,5 +29,5 @@ dfx canister install --quiet --mode $MODE $BOT --argument "$ARGS" || exit 1
 echo ""
 echo "Name: $NAME"
 echo "Principal: $CANISTER_ID"
-echo "Endpoint: http://$CANISTER_ID.raw.localhost:8080"
+echo "Endpoint: http://$CANISTER_ID.raw.localhost:4943"
 echo ""
