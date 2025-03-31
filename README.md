@@ -19,9 +19,9 @@ This template is based on the official [open-chat-bots](https://github.com/open-
 
 ### 1. Prerequisites
 
-Fork this repo and open a new codespace (we recommend you to select the 4-core machine).
-After it's creation you can select to open the codespace directly in vs code.
-Everything should be setup correctly for you to run the following commands.
+- Fork this repo and open a new codespace (we recommend you to select the 4-core machine).
+- After it's creation you can select to open the codespace directly in vs code.
+- Everything should be setup correctly for you to run the following commands.
 
 ---
 
