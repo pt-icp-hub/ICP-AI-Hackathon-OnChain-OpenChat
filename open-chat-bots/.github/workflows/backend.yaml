@@ -1,0 +1,40 @@
+on:
+  pull_request:
+    branches:
+      - main
+
+name: Backend linting and unit tests
+
+jobs:
+  fmt:
+    name: run fmt
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/workflows/setup-rust
+      - uses: actions-rs/cargo@v1
+        with:
+          command: clippy
+          args: --tests --manifest-path rs/Cargo.toml -- -D warnings
+
+  clippy:
+    name: run clippy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/workflows/setup-rust
+      - uses: actions-rs/cargo@v1
+        with:
+          command: clippy
+          args: --tests --manifest-path rs/Cargo.toml -- -D warnings
+
+  unit_tests:
+    name: run unit tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/workflows/setup-rust
+      - uses: actions-rs/cargo@v1
+        with:
+          command: test
+          args: --manifest-path rs/Cargo.toml

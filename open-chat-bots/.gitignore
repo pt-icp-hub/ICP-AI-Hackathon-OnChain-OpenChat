@@ -1,0 +1,23 @@
+# Various IDEs and Editors
+.vscode/
+.idea/
+**/*~
+
+# Mac OSX temporary files
+.DS_Store
+**/.DS_Store
+
+# dfx temporary files
+.dfx/
+
+# rust
+target/
+
+# Environment variables
+.env
+
+Makefile
+bot_store.db
+local/
+rs/canister_ids.json
+*.pem

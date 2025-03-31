@@ -1,0 +1,33 @@
+{
+  "dfx": "0.25.1-beta.1",
+  "canisters": {
+    "echo_bot": {
+      "type": "rust",
+      "package": "echo_bot",
+      "candid": "canister/examples/echo/can.did",
+      "gzip": true
+    },
+    "greet_bot": {
+      "type": "rust",
+      "package": "greet_bot",
+      "candid": "canister/examples/greet/canister/can.did",
+      "gzip": true
+    },
+    "reminder_bot": {
+      "type": "rust",
+      "package": "reminder_bot",
+      "candid": "canister/examples/reminder/can.did",
+      "gzip": true
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8080",
+      "type": "ephemeral",
+      "replica": {
+        "subnet_type": "system"
+      }
+    }
+  },
+  "version": 1
+}

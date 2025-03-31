@@ -1,0 +1,20 @@
+[package]
+name = "oc_bots_sdk"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-trait = { workspace = true }
+base64 = { workspace = true }
+candid = { workspace = true }
+ct-codecs = { workspace = true }
+dataurl = { workspace = true }
+ic-ledger-types = { workspace = true }
+icrc-ledger-types = { workspace = true }
+image = { workspace = true }
+p256 = { workspace = true, features = ["ecdsa", "pkcs8"] }
+rand = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }

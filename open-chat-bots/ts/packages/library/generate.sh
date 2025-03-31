@@ -1,0 +1,2 @@
+didc bind ./src/services/bot_gateway/candid/bot_gateway.did -t ts > ./src/services/bot_gateway/candid/types.d.ts
+didc bind ./src/services/bot_gateway/candid/bot_gateway.did -t js > ./src/services/bot_gateway/candid/idl.js
